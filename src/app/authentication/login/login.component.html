@@ -1,0 +1,48 @@
+<section class="hero is-dark is-bold is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <div class="box">
+            <figure class="avatar">
+                <img src="https://avatars2.githubusercontent.com/u/17018666?s=100&v=4">
+            </figure>
+            <form>
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" placeholder="Email" autofocus="">
+                        <span class="icon is-small is-left">
+                        <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
+                        <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field" *ngIf="verifyCodeRequired">
+                    <div class="control has-icons-left">
+                        <input class="input" type="verificationcode" placeholder="Verification Code">
+                        <span class="icon is-small is-left">
+                        <i class="fa fa-user-secret"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="checkbox">
+                    <input type="checkbox">
+                        Remember me
+                    </label>
+                </div>
+                <button (click)="loginClicked()" class="button is-block is-info is-fullwidth">Login</button>
+                <br />
+                <a routerLink="/signup" class="button is-block is-small is-light is-fullwidth">Go to Sign Up</a>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

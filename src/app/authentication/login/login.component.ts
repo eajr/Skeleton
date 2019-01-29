@@ -9,13 +9,13 @@ export class LoginComponent implements OnInit {
   private verifyCodeRequired: Boolean;
 
   constructor() {
-    this.verifyCodeRequired = true;
+    this.verifyCodeRequired = false;
   }
 
   ngOnInit() {
   }
 
   loginClicked() {
-    console.log('yo');
+    console.log('You clicked login');
   }
 }
